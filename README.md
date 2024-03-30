@@ -10,9 +10,6 @@ Figma
 Photoshop
 Blender
 
-twitter.com/hamishmw
-github.com/hamishmw
-
 _______________________________________________________________________________
 
 TECHNOLOGY | テクノロジー
@@ -29,3 +26,10 @@ FONTS | フォント
 Gotham
 IPA Gothic Regular
 Hiragino Kaku Gothic W8
+
+_______________________________________________________________________________
+
+Connect | コネクト
+
+twitter.com/jeevannn0
+github.com/jeevannn0
