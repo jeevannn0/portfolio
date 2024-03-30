@@ -1,25 +1,23 @@
 __  __  __
-\ \ \ \ \/
- \ \/\ \
+\ \ \ \/ /
+ \ \/\ \/
   \/  \/
-
-The humans.txt file explains the team, technology,
-and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
+Developer | デベロッパー
 
-Hamish Williams
+Jeevan
 Hand crafted design & web development
 
-Design tools:
-Figma
-Photoshop
-Blender
+_______________________________________________________________________________
 
-twitter.com/hamishmw
-github.com/hamishmw
+TECHNOLOGY | テクノロジー
+
+React
+Remix
+Three.js
+Framer Motion
 
 _______________________________________________________________________________
 
@@ -37,3 +35,10 @@ FONTS | フォント
 Gotham
 IPA Gothic Regular
 Hiragino Kaku Gothic W8
+
+_______________________________________________________________________________
+
+Connect | コネクト
+
+twitter.com/jeevannn0
+github.com/jeevannn0
