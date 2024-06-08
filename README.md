@@ -2,8 +2,8 @@
 
 DESIGNER | デザイナー
 
-Hamish Williams
-Hand crafted design & web development
+Jeevan
+
 
 Design tools:
 -Figma
