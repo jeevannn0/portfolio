@@ -117,7 +117,7 @@ export function Error({ error }) {
                     href="/"
                     icon="chevron-right"
                   >
-                    Back to homepage
+                    Back to homepg
                   </Button>
                 )}
               </div>
