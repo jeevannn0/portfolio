@@ -1,7 +1,7 @@
 import notFoundPoster from '~/assets/notfound.jpg';
 import notFoundVideo from '~/assets/notfound.mp4';
 import flatlinePoster from '~/assets/flatline.png';
-import flatlineVideo from '~/assets/flatline.mp4';
+import flatlineVideo from '~/assets/flatline.gif';
 import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Heading } from '~/components/heading';
@@ -103,7 +103,7 @@ export function Error({ error }) {
                     iconHoverShift
                     className={styles.button}
                     data-visible={visible}
-                    href="https://www.youtube.com/watch?v=EuQzHGcsjlA"
+                    href="https://www.youtube.com/@DavidLaid/videos"
                     icon="chevron-right"
                   >
                     Emotional support
@@ -141,7 +141,7 @@ export function Error({ error }) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Animation from Berserk (1997)
+                  David Laid
                 </a>
               ) : (
                 <a

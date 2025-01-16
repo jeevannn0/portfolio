@@ -1,7 +1,3 @@
-import {
-  unstable_vitePlugin as remix,
-  unstable_cloudflarePreset as cloudflare,
-} from '@remix-run/dev';
 import { defineConfig } from 'vite';
 import jsconfigPaths from 'vite-jsconfig-paths';
 import mdx from '@mdx-js/rollup';
@@ -10,8 +6,11 @@ import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
 import rehypeImgSize from 'rehype-img-size';
 import rehypeSlug from 'rehype-slug';
 import rehypePrism from '@mapbox/rehype-prism';
+import * as RemixDev from '@remix-run/dev';
 
-const isStorybook = process.argv[1]?.includes('storybook');
+const remixPlugin = RemixDev.vitePlugin || (() => {
+  throw new Error("vitePlugin is not available in your @remix-run/dev version.");
+});
 
 export default defineConfig({
   assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
@@ -27,15 +26,9 @@ export default defineConfig({
       remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
       providerImportSource: '@mdx-js/react',
     }),
-    !isStorybook &&
-      remix({
-        presets: [cloudflare()],
-        routes(defineRoutes) {
-          return defineRoutes(route => {
-            route('/', 'routes/home/route.js', { index: true });
-          });
-        },
-      }),
+    remixPlugin({
+      presets: [],
+    }),
     jsconfigPaths(),
   ],
   ssr: {
